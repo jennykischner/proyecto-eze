@@ -10,6 +10,7 @@
     <title>Contacto</title>
 </head>
 <body>
+    <!--Header-->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">  
           <div class="container-fluid">
@@ -30,20 +31,34 @@
         </header>  
     <main>
         <div class="call">
-            <h1>Contacto</h1>
-            <form action="enviar.php" method="post" enctype="text/plain">
-                <label for="">Nombre</label>
-                <input type="text" required placeholder="Ingresa tu nombre"> <br><br>
-                <label for="">Email</label>
-                <input type="text" required placeholder="Ingresa tu email"> <br> <br>        
-                <label for="">Teléfono</label>
-                <input type="text" required placeholder="Ingresa tu teléfono"> <br><br>
-                <label for="">Comentarios</label>
-                <textarea name="areadetexto" id="" cols="40"    rows="20" placeholder="Escribe algo..."></textarea><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+            <!--Titulo principal-->
+             <h1 class="titulo-principal">Dejanos aquí tu consulta</h1> 
+        </div>       
+        <!--Formulario-->
+        <form class="container-formulario">
+            <div class="mb-3">
+                <label for="inputName" class="form-label">Apellido y Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Escribe tu apellido y nombre">
+                </div>
+                <div class="mb-3">
+                <label for="inputEmail" class="form-label">Mail</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="mail@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                <label for="inputContact" class="form-label">Contacto</label>
+                <input type="text" class="form-control" id="inputContact" placeholder="Número de contacto">
+                </div>
+                <div class="mb-3">
+                <label for="inputComments" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="inputComments" rows="5" placeholder="Escribe tus comentarios aquí"></textarea>
+                </div>
+                <div class="mb-3">
+                <button type="submit" class="btn ">Enviar</button>
+                <button type="reset" class="btn ">Borrar</button>
+            </div>
+        </form>
     </main>
+    <!--Footer-->
     <footer>
         <h2>Beginning - Todos los derechos reservados</h2>
         <div class="footer-icons">

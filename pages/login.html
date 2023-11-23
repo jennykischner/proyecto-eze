@@ -10,6 +10,7 @@
     <title>Login</title>
 </head>
 <body>
+    <!--Header-->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">  
           <div class="container-fluid">
@@ -29,19 +30,25 @@
         </nav>
         </header>  
         
-    <main>
-        <div class="call">
-            <h1>Login</h1>
-            <form action="enviar.php" method="post" enctype="text/plain">
+        <!--Formulario login-->
+        <main class="container-login">
+            <div class="login-form">
+                <h1>Login</h1>
+              <form action="enviar.php" method="post" enctype="text/plain">
                 <label for="">Usuario</label>
                 <input type="text" required placeholder="Ingresa tu email"> <br>
                 <label for="">Contraseña</label>
                 <input type="text" required placeholder="Ingresa tu Contraseña"> <br>
-                <input type="submit" value="Ingresar"><br>  
-                <label for="">Olvidé mi contraseña</label>
-                <label for="">¿Nuevo usuario? Registrate</label>  
-    </main>
-
+                <input class="btn-login"  type="submit" value="Ingresar"><br>
+                <div class="extra-links">
+                  <a href="#">Olvidé mi contraseña</a>
+                  <a href="#">¿Nuevo usuario? Regístrate</a>
+                </div>
+              </form>
+            </div>
+          </main>
+          
+    <!--Footer-->     
     <footer>
         <h2>Beginning - Todos los derechos reservados</h2>
         <div class="footer-icons">
