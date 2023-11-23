@@ -1,0 +1,160 @@
+/*Fuentes*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Mukta:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Mukta:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+  }
+
+/*Estilos Header y Nav*/
+
+header {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  background-color: #4c729a;
+}
+
+header .logo {
+  width: 180px;
+  height: 150px;
+}
+
+header .navbar-toggler {
+  background-color: white;
+}
+
+header .navbar-toggler-icon {
+  background-color: white;
+}
+
+header .nav-link {
+  display: inline;
+  margin-right: 20px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+header .navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4c729a;
+}
+
+header .navbar-nav .nav-link {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header .navbar-nav {
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+/*Estilos título y párrafo principal*/
+
+.call {
+  color: steelblue;
+  font-family: sans-serif;
+  float: none;
+}
+
+.titulo-principal {
+  font-size: 38;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  font-size: 40px;
+}
+
+.parrafo-principal {
+  padding: 30px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+}
+
+/*Estilos Video*/
+
+.container-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 5% auto 10% auto;
+}
+.video-container video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*Estilos Footer*/
+
+footer {
+  background-color: #4c729a;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Estilos Nosotros*/
+
+.container-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 10px auto 100px;
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
