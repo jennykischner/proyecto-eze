@@ -70,13 +70,13 @@ header .navbar-nav {
 /*Estilos título y párrafo principal*/
 
 .call {
-  color: steelblue;
+  color: #4682B4;
   font-family: sans-serif;
   float: none;
 }
 
 .titulo-principal {
-  font-size: 38;
+  font-size: 38px;
   padding-top: 50px;
   padding-bottom: 30px;
   text-align: center;
