@@ -66,39 +66,6 @@ header .navbar-nav {
   margin-top: 100px;
 }
 
-/*Responsive*/
-
-/* Estilos para celular */
-@media (max-width: 767px) {
-  header {
-    height: 100px;
-  }
-  header .logo {
-    width: 120px;
-    height: 100px;
-  }
-  header .nav-link {
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  header .navbar-nav {
-    margin-top: 20px;
-  }
-}
-/* Estilos para tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  header {
-    height: 120px;
-  }
-  header .logo {
-    width: 150px;
-    height: 120px;
-  }
-  header .nav-link {
-    font-size: 18px;
-    margin-right: 15px;
-  }
-}
 
 /*Estilos título y párrafo principal*/
 
@@ -127,27 +94,7 @@ header .navbar-nav {
   font-size: 20px;
 }
 
-/*Responsive*/
-/* Estilos para celular */
-@media (max-width: 767px) {
-  .titulo-principal {
-    font-size: 30px;
-    padding: 30px 0 20px;
-  }
-  .parrafo-principal {
-    margin: 0 10px 10px;
-  }
-}
-/* Estilos para tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .titulo-principal {
-    font-size: 35px;
-    padding: 40px 0 25px;
-  }
-  .parrafo-principal {
-    margin: 0 30px 15px;
-  }
-}
+
 
 /*Estilos Video*/
 
@@ -164,25 +111,8 @@ header .navbar-nav {
   max-height: 100%;
 }
 
-/*Responsive*/
-/* Estilos para celular */
-@media (max-width: 767px) {
-  .container-video {
-    width: 90%;
-  }
-}
-/* Estilos para tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container-video {
-    width: 80%;
-  }
-}
-/* Estilos para computadora */
-@media (min-width: 1024px) {
-  .container-video {
-    width: 70%;
-  }
-}
+
+
 
 /*Estilos Footer*/
 
@@ -204,15 +134,8 @@ footer {
   text-decoration: none;
 }
 
-/*Responsive*/
 
-/* Estilos para celular */
-@media (max-width: 767px) {
-  .footer-icons a {
-    font-size: 18px;
-    margin: 0 5px;
-  }
-}
+
 
 /* Estilos Nosotros*/
 
@@ -244,18 +167,7 @@ footer {
   margin: 0 auto;
 }
 
-/*Responsive*/
-/* Estilos para celular */
-@media (max-width: 767px) {
-  .container-nosotros {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 50px;
-  }
-  .card {
-    width: 100%;
-  }
-}
+
 
 /*Estilos Entidades Academicas*/
 
@@ -319,18 +231,7 @@ footer {
   color: white;
 }
 
-/*Responsive*/
-/* Estilos para celular */
-@media (max-width: 767px) {
-  .container-entidades {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 50px;
-  }
-  .card {
-    width: 100%;
-  }
-}
+
 
 /*Estilos Contacto*/
 
@@ -386,13 +287,7 @@ label {
   cursor: pointer;
 }
 
-/*Responsive*/
-/*Estilos para celular*/
-@media (max-width: 767px) {
-  .container-formulario {
-    max-width: 100%;
-  }
-}
+
 
 /*Estilos Login*/
 
@@ -458,7 +353,137 @@ label {
   font-size: 15px;
 }
 
-/*Responsive*/
+
+
+/*RESPONSIVE*/
+
+/*Header y Navegador*/
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  header {
+    height: 100px;
+  }
+  header .logo {
+    width: 120px;
+    height: 100px;
+  }
+  header .nav-link {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  header .navbar-nav {
+    margin-top: 20px;
+  }
+}
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 120px;
+  }
+  header .logo {
+    width: 150px;
+    height: 120px;
+  }
+  header .nav-link {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+}
+
+/*Titulo y párrafo principal*/
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .titulo-principal {
+    font-size: 30px;
+    padding: 30px 0 20px;
+  }
+  .parrafo-principal {
+    margin: 0 10px 10px;
+  }
+}
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titulo-principal {
+    font-size: 35px;
+    padding: 40px 0 25px;
+  }
+  .parrafo-principal {
+    margin: 0 30px 15px;
+  }
+}
+
+/*Video Principal*/
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .container-video {
+    width: 90%;
+  }
+}
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-video {
+    width: 80%;
+  }
+}
+/* Estilos para computadora */
+@media (min-width: 1024px) {
+  .container-video {
+    width: 70%;
+  }
+}
+
+/*Footer*/
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .footer-icons a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+}
+
+/*HTML Nosotros*/
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .container-nosotros {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+
+/*HTML Entidades Académicas*/
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .container-entidades {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/*HTML Contacto*/
+
+/*Estilos para celular*/
+@media (max-width: 767px) {
+  .container-formulario {
+    max-width: 100%;
+  }
+}
+
+/* HTML Login*/
+
 /*Estilos para celular*/
 
 @media (max-width: 767px) {
