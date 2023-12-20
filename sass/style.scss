@@ -1,0 +1,490 @@
+@import "variables";
+@import "mixins";
+
+/*Fuentes*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Mukta:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Mukta:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  // Estilos Header y Nav
+  header {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-color: #4c729a;
+
+    .logo {
+      width: 180px;
+      height: 150px;
+    }
+
+    .navbar-toggler,
+    .navbar-toggler-icon {
+      background-color: white;
+    }
+
+    .nav-link {
+      display: inline;
+      margin-right: 20px;
+      font-family: "Raleway", sans-serif;
+      color: white;
+      font-size: 20px;
+    }
+
+    .navbar-collapse {
+      display: flex;
+      justify-content: space-between;
+      background-color: #4c729a;
+
+      .navbar-nav .nav-link {
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    }
+
+    .navbar-nav {
+      margin-left: auto;
+      margin-top: 100px;
+    }
+  }
+
+  // Estilos título y párrafo principal
+  .call {
+    color: #4682b4;
+    font-family: sans-serif;
+    float: none;
+  }
+
+  .titulo-principal {
+    font-size: 38px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-size: 40px;
+  }
+
+  .parrafo-principal {
+    padding: 30px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+  }
+
+  // Estilos Video
+  .container-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 5% auto 10% auto;
+
+    .video-container video {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  // Estilos Footer
+  footer {
+    background-color: #4c729a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    .footer-icons a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  }
+
+  // Estilos Nosotros
+  .container-nosotros,
+  .container-entidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 10px auto 100px;
+
+    .card {
+      width: 18rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // Estilos Entidades Academicas
+  .container-entidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 10px auto 100px;
+    .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 20px;
+        text-align: center;
+        background-color: #0056b3;
+
+        .card-text {
+          font-size: 16px;
+          margin-bottom: 10px;
+          font-family: "Raleway", sans-serif;
+          color: white;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 8px 16px;
+          margin-top: 10px;
+          font-size: 14px;
+          text-align: center;
+          text-decoration: none;
+          color: #007bff;
+          background-color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #007bff;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  // Estilos Contacto
+  .container-formulario {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    .mb-3 {
+      max-width: 400px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      padding: 5px;
+    }
+
+    .form-label {
+      margin-bottom: 20px;
+      font-family: "Raleway", sans-serif;
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s ease-in-out;
+
+      &:focus {
+        border-color: #333333;
+        outline: none;
+      }
+    }
+
+      .btn {
+        padding: 8px 20px;
+        margin-right: 10px;
+        border-radius: 4px;
+        font-family: "Lato", sans-serif;
+        background-color: #007bff;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    
+  }
+
+  // Estilos Login
+  .container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+    .login-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 350px;
+      width: 100%;
+
+      input[type="text"],
+      input[type="password"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-family: "Crimson Text", serif;
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: steelblue;
+        font-family: sans-serif;
+      }
+
+      .btn-login {
+        padding: 8px 20px;
+        margin-right: 10px;
+        border-radius: 4px;
+        font-family: "Lato", sans-serif;
+        background-color: #007bff;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .extra-links {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #888;
+        text-align: center;
+
+        a {
+          color: #007bff;
+          text-decoration: none;
+          margin-left: 5px;
+          font-family: "Crimson Text", serif;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  /*RESPONSIVE*/
+
+  /*Header y Navegador*/
+
+  /* Estilos para celular */
+  @media (max-width: 767px) {
+    header {
+      height: 100px;
+    }
+    header .logo {
+      width: 120px;
+      height: 100px;
+    }
+    header .nav-link {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    header .navbar-nav {
+      margin-top: 20px;
+    }
+  }
+  /* Estilos para tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    header {
+      height: 120px;
+    }
+    header .logo {
+      width: 150px;
+      height: 120px;
+    }
+    header .nav-link {
+      font-size: 18px;
+      margin-right: 15px;
+    }
+  }
+
+  /*Titulo y párrafo principal*/
+
+  /* Estilos para celular */
+  @media (max-width: 767px) {
+    .titulo-principal {
+      font-size: 30px;
+      padding: 30px 0 20px;
+    }
+    .parrafo-principal {
+      margin: 0 10px 10px;
+    }
+  }
+  /* Estilos para tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .titulo-principal {
+      font-size: 35px;
+      padding: 40px 0 25px;
+    }
+    .parrafo-principal {
+      margin: 0 30px 15px;
+    }
+  }
+
+  /*Video Principal*/
+
+  /* Estilos para celular */
+  @media (max-width: 767px) {
+    .container-video {
+      width: 90%;
+    }
+  }
+  /* Estilos para tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container-video {
+      width: 80%;
+    }
+  }
+  /* Estilos para computadora */
+  @media (min-width: 1024px) {
+    .container-video {
+      width: 70%;
+    }
+  }
+
+  /*Footer*/
+  /* Estilos para celular */
+  @media (max-width: 767px) {
+    .footer-icons a {
+      font-size: 18px;
+      margin: 0 5px;
+    }
+  }
+
+  /*HTML Nosotros*/
+
+  /* Estilos para celular */
+  @media (max-width: 767px) {
+    .container-nosotros {
+        grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+
+    /* Estilos para tablet */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .container-nosotros {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 50px;
+          }
+          .card {
+            width: 100%;
+          }
+      }
+
+  /*HTML Entidades Académicas*/
+
+  /* Estilos para celular */
+  @media (max-width: 767px) {
+    .container-entidades {
+        grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+  /* Estilos para tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container-entidades {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 50px;
+      }
+      .card {
+        width: 100%;
+      }
+  }
+
+
+  /*HTML Contacto*/
+
+  /*Estilos para celular*/
+  @media (max-width: 767px) {
+    .container-formulario {
+      max-width: 100%;
+    }
+  }
+
+  /* HTML Login*/
+
+  /*Estilos para celular*/
+
+  @media (max-width: 767px) {
+    .call {
+      max-width: 100%;
+    }
+  }
+}
