@@ -1,4 +1,4 @@
-<img src="./img/../multimedia/logo.png">
+<img src="./img/../multimedia/readme.png">
 
  ## ★ Proyecto: Beginning
  ####  Este proyecto forma parte del curso Desarrollo Web, dictado por Coderhouse.
