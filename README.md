@@ -14,10 +14,10 @@
    - Tablet
 
  ⋆ Construido con:
-   - ✔ HTML
-   - ✔ CSS
-   - ✔ SASS
-   - ✔ Deploy en NETLIFY
+   - HTML
+   - CSS
+   - SASS
+   - Deploy en NETLIFY
 
 
  ⋆ Recursos:
