@@ -7,7 +7,7 @@
  #####   - Tutor: 
 
  Website:  
-[Mira aquí mi página]() 
+[Mira acá mi página]() 
 
  ⋆ Diseño responsivo:
    - Smartphone
