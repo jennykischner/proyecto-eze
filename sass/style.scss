@@ -20,14 +20,12 @@ body {
 
   // Estilos Header y Nav
   header {
-    height: 150px;
-    width: 100%;
+    @include tamanos(100%, 150px);
     background-size: cover;
-    background-color: #4c729a;
+    background-color: $colorPrincipal;
 
     .logo {
-      width: 180px;
-      height: 150px;
+      @include tamanos(180px, 150px);
     }
 
     .navbar-toggler,
@@ -46,7 +44,7 @@ body {
     .navbar-collapse {
       display: flex;
       justify-content: space-between;
-      background-color: #4c729a;
+      background-color: $colorPrincipal;
 
       .navbar-nav .nav-link {
         text-decoration: none;
@@ -62,7 +60,7 @@ body {
 
   // Estilos título y párrafo principal
   .call {
-    color: #4682b4;
+    color: $colorSecundario;
     font-family: sans-serif;
     float: none;
   }
@@ -103,7 +101,7 @@ body {
 
   // Estilos Footer
   footer {
-    background-color: #4c729a;
+    background-color: $colorPrincipal;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -132,8 +130,8 @@ body {
 
     .card {
       width: 18rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      border: 1px solid $colorTerciario;
+      @include bordes-redondeados(8px);
       overflow: hidden;
       transition: transform 0.3s ease-in-out;
 
@@ -142,8 +140,7 @@ body {
       }
 
       .card-img-top {
-        width: 100%;
-        height: 100%;
+        @include tamanos(100%, 100%);
         object-fit: cover;
         margin: 0 auto;
       }
@@ -160,8 +157,8 @@ body {
     margin: 10px auto 100px;
     .card {
       width: 300px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      border: 1px solid $colorTerciario;
+      @include bordes-redondeados(8px);
       overflow: hidden;
       transition: transform 0.3s ease-in-out;
 
@@ -170,15 +167,14 @@ body {
       }
 
       .card-img-top {
-        width: 100%;
-        height: 100%;
+        @include tamanos(100%, 100%);
         object-fit: cover;
       }
 
       .card-body {
         padding: 20px;
         text-align: center;
-        background-color: #0056b3;
+        background-color: $colorSecundario;
 
         .card-text {
           font-size: 16px;
@@ -194,15 +190,15 @@ body {
           font-size: 14px;
           text-align: center;
           text-decoration: none;
-          color: #007bff;
+          color: $colorSecundario;
           background-color: white;
           border: none;
-          border-radius: 4px;
+          @include bordes-redondeados(4px);
           cursor: pointer;
           transition: background-color 0.3s ease;
 
           &:hover {
-            background-color: #007bff;
+            background-color: $colorSecundario;
             color: white;
           }
         }
@@ -212,7 +208,7 @@ body {
 
   // Estilos Contacto
   .container-formulario {
-    border: 1px solid #ccc;
+    border: 1px solid $colorTerciario;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -242,27 +238,26 @@ body {
     .form-control {
       width: 100%;
       padding: 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
+      @include bordes-redondeados(4px);
+      border: 1px solid $colorTerciario;
       transition: border-color 0.3s ease-in-out;
 
       &:focus {
-        border-color: #333333;
+        border-color: $colorCuaternario;
         outline: none;
       }
     }
 
-      .btn {
-        padding: 8px 20px;
-        margin-right: 10px;
-        border-radius: 4px;
-        font-family: "Lato", sans-serif;
-        background-color: #007bff;
-        color: white;
-        font-size: 15px;
-        cursor: pointer;
-      }
-    
+    .btn {
+      padding: 8px 20px;
+      margin-right: 10px;
+      @include bordes-redondeados(4px);
+      font-family: "Lato", sans-serif;
+      background-color: $colorSecundario;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
   }
 
   // Estilos Login
@@ -271,12 +266,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: $colorQuinario;
 
     .login-form {
       background-color: #fff;
       padding: 20px;
-      border-radius: 8px;
+      @include bordes-redondeados(8px);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       text-align: center;
       max-width: 350px;
@@ -287,8 +282,8 @@ body {
         width: calc(100% - 22px);
         padding: 10px;
         margin-bottom: 20px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
+        @include bordes-redondeados(4px);
+        border: 1px solid $colorTerciario;
         font-family: "Crimson Text", serif;
         font-size: 15px;
       }
@@ -296,16 +291,16 @@ body {
       h1 {
         font-size: 28px;
         margin-bottom: 20px;
-        color: steelblue;
+        color: $colorSecundario;
         font-family: sans-serif;
       }
 
       .btn-login {
         padding: 8px 20px;
         margin-right: 10px;
-        border-radius: 4px;
+        @include bordes-redondeados(4px);
         font-family: "Lato", sans-serif;
-        background-color: #007bff;
+        background-color: $colorSecundario;
         color: white;
         font-size: 15px;
         cursor: pointer;
@@ -318,7 +313,7 @@ body {
         text-align: center;
 
         a {
-          color: #007bff;
+          color: $colorSecundario;
           text-decoration: none;
           margin-left: 5px;
           font-family: "Crimson Text", serif;
@@ -338,8 +333,7 @@ body {
       height: 100px;
     }
     header .logo {
-      width: 120px;
-      height: 100px;
+      @include tamanos(120px, 100px);
     }
     header .nav-link {
       font-size: 16px;
@@ -355,8 +349,7 @@ body {
       height: 120px;
     }
     header .logo {
-      width: 150px;
-      height: 120px;
+      @include tamanos(150px, 120px);
     }
     header .nav-link {
       font-size: 18px;
@@ -422,7 +415,7 @@ body {
   /* Estilos para celular */
   @media (max-width: 767px) {
     .container-nosotros {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 10px;
       margin-bottom: 50px;
     }
@@ -431,24 +424,24 @@ body {
     }
   }
 
-    /* Estilos para tablet */
-    @media (min-width: 768px) and (max-width: 1023px) {
-        .container-nosotros {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-bottom: 50px;
-          }
-          .card {
-            width: 100%;
-          }
-      }
+  /* Estilos para tablet */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container-nosotros {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    .card {
+      width: 100%;
+    }
+  }
 
   /*HTML Entidades Académicas*/
 
   /* Estilos para celular */
   @media (max-width: 767px) {
     .container-entidades {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 10px;
       margin-bottom: 50px;
     }
@@ -459,15 +452,14 @@ body {
   /* Estilos para tablet */
   @media (min-width: 768px) and (max-width: 1023px) {
     .container-entidades {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-bottom: 50px;
-      }
-      .card {
-        width: 100%;
-      }
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    .card {
+      width: 100%;
+    }
   }
-
 
   /*HTML Contacto*/
 

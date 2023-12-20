@@ -1,0 +1,8 @@
+@mixin tamanos($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin bordes-redondeados($radio) {
+  border-radius: $radio;
+}
