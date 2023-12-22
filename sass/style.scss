@@ -89,8 +89,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    @include tamanos(100%, 100%);
     margin: 5% auto 10% auto;
 
     .video-container video {
@@ -209,7 +208,7 @@ body {
   // Estilos Contacto
   .container-formulario {
     border: 1px solid $colorTerciario;
-    border-radius: 8px;
+    @include bordes-redondeados(8px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 0 auto;
